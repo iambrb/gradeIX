@@ -83,6 +83,19 @@ nav a {
     background-color: #0056b3;
 }
 
+.btn {
+    padding: 10px 20px;
+    background-color: #0cbd29;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: #0c8b08;
+}
+
 .button {
     padding: 10px 20px;
     background-color: #8400ff;
@@ -105,10 +118,7 @@ footer {
     padding-right: 25px;
 }
 
-a {
-    text-decoration: none;
-    color: #2f00ff;
-}
+
 
 </style>
 
@@ -116,10 +126,11 @@ a {
     <header>
         <nav>
                
-              <a href="#home" class="cta-button">Home</a>  
-              <a href="#about" class="cta-button">About</a>  
-              <a href="#contact" class="cta-button">Contact</a>  
+              <a href="#" class="cta-button">Home</a>  
+              <a href="#about" class="cta-button">About</a> 
               <a href="#fine" class="cta-button">Fine</a> 
+              <a href="#contact" class="cta-button">Contact</a>  
+
         </nav>
         <div class="hero">
             <h1>Welcome to Our Class Website</h1>
@@ -138,7 +149,11 @@ a {
         <div class="container">
                 <h2>Check Fine</h2>
                 <p>By following the below link you can check your fine that includes language fine, hygiene fine and absent fine. </p>
-                <a href="fine.html" class="cta-button">Check Fine</a>
+                <a href="fine.html" class="cta-button">Check Fine</a><br><br>
+                <hr>
+                <h2>See Fine Collection</h2>
+                <p> By simply clicking on the below link you can see how much fine is collected and who has paid what amount of fine.</p>
+                <br><a href="collected.html" class="btn"> Fine Collection</a>
         </div>
     </section>
 

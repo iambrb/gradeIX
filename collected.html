@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="logo.ico" type="image/x-icon">
+  <title>Fine Collection</title>
+  
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3f3f3;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+      font-family: 'Arial Black', sans-serif;
+      font-size: 36px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    #fine-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    #fine-list li {
+      margin-bottom: 10px;
+      padding: 15px;
+      border-radius: 8px;
+      background-color: #f9f9f9;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    #fine-list .student-name {
+      font-weight: bold;
+      color: #333;
+    }
+
+    #fine-list .fine-amount {
+      margin-left: 10px;
+      color: green;
+    }
+
+    #total-fine {
+      font-weight: bold;
+      text-align: right;
+      margin-top: 20px;
+      font-size: 1.2em;
+      color: green;
+    }
+    a {
+      text-decoration: none;
+    }
+
+    button {
+      padding: 10px 18px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1><a href="index.html"><img src="back.png" alt="Back Icon" width="30px"></a> Fine Collection</h1>
+    <ul id="fine-list">
+      <!-- Fine information will be populated here dynamically -->
+    </ul>
+    <hr>
+    <div id="total-fine">
+     <button>Total Collected Fine: Rs <span id="total-amount"></span></button>
+    </div>
+  </div>
+
+  <script>
+        const fines = [
+  { name: 'Aashish Mahata', amount: 0 },
+  { name: 'Abinit Sunar', amount: 20 },
+  { name: 'Aman Chaudhary', amount: 25 },
+  { name: 'Amar Kumar Bohara', amount: 65 },
+  { name: 'Anish Sunar', amount: 0 },
+  { name: 'Anush Thakurathi', amount: 0 },
+  { name: 'Apen Rana', amount: 20 },
+  { name: 'Ashok S.K', amount: 40 },
+  { name: 'Asmit Dangaura', amount: 10 },
+  { name: 'Aayush Sunar', amount: 0 },
+  { name: 'Babita Magar', amount: 10 },
+  { name: 'Bhupesh Raj Bhatt', amount: 15 },
+  { name: 'Chandani Dhami', amount: 0 },
+  { name: 'Himanshu Bohara', amount: 0 },
+  { name: 'Kumari Laxmi Dhami', amount: 0 },
+  { name: 'Kumari Roshani Dhami', amount: 0 },
+  { name: 'Manish Kumari Bist', amount: 0 },
+  { name: 'Rakesh Kathayat', amount: 0 },
+  { name: 'Simran Sunar', amount: 40 },
+  { name: 'Smriti Rana', amount: 0 },
+  { name: 'Suman Pant', amount: 0 },
+  { name: 'Susmita Ayer', amount: 0 },
+  { name: 'Yashoda Kumari Bist', amount: 0 },
+];
+
+    const fineList = document.getElementById('fine-list');
+    const totalAmountElement = document.getElementById('total-amount');
+
+    let totalFine = 0;
+
+    fines.forEach(fine => {
+      const listItem = document.createElement('li');
+      listItem.innerHTML = `<span class="student-name">${fine.name}</span> has paid a fine of <span class="fine-amount">Rs. ${fine.amount}</span>`;
+      fineList.appendChild(listItem);
+
+      totalFine += fine.amount;
+    });
+
+    totalAmountElement.textContent = totalFine;
+  </script>
+</body>
+</html>

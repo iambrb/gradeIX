@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="logo.ico" type="image/x-icon">
   <title>Aayush Sunar</title>
 </head>
 <style>
@@ -75,11 +76,11 @@
     <div class="container">
       <h1 class="heading" align="center"><a href="fine.html"><img src="back.png" width="30px"></a>&nbsp;&nbsp;Student Fines Details</h1>
       <div id="studentInfo" class="info-box">
-        <p><span class="info-label">Student Name:</span>Aayush Sunar</p>
+        <p><span class="info-label">Student Name:</span> Aayush Sunar</p>
         <p><span class="info-label">Roll No:</span> 10 </p>
-        <p><span class="info-label">Language Fine:</span> Rs. 103.00</p>
-        <p><span class="info-label">Absent Fine:</span> Rs. 10.00</p>
-        <p><span class="info-label">Hygiene Fine:</span> Rs. 0.00</p>
+        <p><span class="info-label">Language Fine:</span> Rs. 109.00</p>
+        <p><span class="info-label">Absent Fine:</span> Rs. 50.00</p>
+        <p><span class="info-label">Hygiene Fine:</span> Rs. 5.00</p>
       </div>
   
       <button class="calculate-btn" onclick="calculateTotalFine()">Calculate Total Fine</button>
@@ -89,9 +90,9 @@
   <br>
     <script>
       function calculateTotalFine() {
-        const languageFine = 103.00;
-        const absentFine = 10.00;
-        const hygieneFine = 0.00;
+        const languageFine = 109.00;
+        const absentFine = 50.00;
+        const hygieneFine = 5.00;
   
         const totalFine = languageFine + absentFine + hygieneFine;
         const totalFineDisplay = document.getElementById('totalFine');
