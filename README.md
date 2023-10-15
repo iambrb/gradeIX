@@ -1,3 +1,3 @@
-# gradeXI
+# GradeIX
 
-This is our Grade XI website.
+This is our Grade 9 website.
