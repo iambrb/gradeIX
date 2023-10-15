@@ -69,13 +69,19 @@
 
     button {
       padding: 10px 18px;
-      font-size: 16px;
+      font-size: 14px;
       background-color: #4CAF50;
       color: white;
       border: none;
       border-radius: 5px;
       font-weight: 600;
     }
+
+    #fine-list .class-diary {
+      font-weight: bolder;
+      color: red; 
+    }
+
   </style>
 </head>
 <body>
@@ -86,7 +92,7 @@
     </ul>
     <hr>
     <div id="total-fine">
-     <button>Total Collected Fine: Rs <span id="total-amount"></span></button>
+     <button>Total Amount: Rs.<span id="total-amount"></span></button>
     </div>
   </div>
 
@@ -115,7 +121,9 @@
   { name: 'Suman Pant', amount: 0 },
   { name: 'Susmita Ayer', amount: 0 },
   { name: 'Yashoda Kumari Bist', amount: 0 },
-];
+  { name: 'Amount deducted for the class diary <font size="3px">:</font>', amount: -110, class: 'class-diary' }
+    ];
+    
 
     const fineList = document.getElementById('fine-list');
     const totalAmountElement = document.getElementById('total-amount');
@@ -124,13 +132,20 @@
 
     fines.forEach(fine => {
       const listItem = document.createElement('li');
-      listItem.innerHTML = `<span class="student-name">${fine.name}</span> has paid a fine of <span class="fine-amount">Rs. ${fine.amount}</span>`;
+      const fineClass = fine.class ? fine.class : '';
+      if (fine.amount < 0) {
+        listItem.innerHTML = `<i><span class="student-name ${fineClass}">${fine.name}</span><b><span class="fine-amount" style="color: red;">Rs. ${Math.abs(fine.amount)}</span></b></i>`;
+      } else {
+        listItem.innerHTML = `<span class="student-name ${fineClass}">${fine.name}</span> has paid <span class="fine-amount" style="color: green;">Rs. ${fine.amount}</span>`;
+      }
       fineList.appendChild(listItem);
 
       totalFine += fine.amount;
     });
 
-    totalAmountElement.textContent = totalFine;
-  </script>
+    totalAmountElement.innerHTML = ` <span>${Math.abs(totalFine)}</span>`;
+
+</script>
+
 </body>
 </html>
