@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="logo.ico" type="image/x-icon">
     <title>Check Fine</title>
     <style>
         body {
@@ -19,7 +19,7 @@
         }
 
         .container {
-            width: 400px;
+            width: 300px;
             padding: 22px;
             border-radius: 13px;
             background-color: #fff;
@@ -108,23 +108,17 @@
 <body>
    
     <div class="container">
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="index.html#about">About</a>
-            <a href="index.html#contact">Contact</a>
-            <a href="captains.html">Leadership</a>
-        </nav>
-        <br><br>
+   
         <h1>Check Your Fine</h1>
         <form>
         <label for="rollNumber">Enter Roll Number (1-23):</label>
         <input type="number" id="rollNumber" min="1" max="23">
-        <button onclick="checkFine()">Check Fine</button>
+        <button onclick="checkFine()" target="_blank">Check Fine</button>
         </form>
        
         <div id="result"></div>
          <div style="font-size: 14px; color: #888; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
-           <a href="collected.html">Click here to see the total collected fine.</a>
+           <a href="collected.html" target="_blank">Click here to see the total collected fine.</a>
         </div>
     
         

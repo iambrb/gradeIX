@@ -23,40 +23,32 @@ header {
 
 nav{
     width: 100%;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav li {
-    display: inline;
-    margin: 0 20px;
+    font-size: 11px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 nav a {
     text-decoration: none;
     color: white;
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 .hero {
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 .content-section1 {
     padding-top: 60px;
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
     padding-bottom: 10px;
 
 }
 
 .content-section {
     padding-top: 10px;
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
     padding-bottom: 10px;
 
 }
@@ -110,48 +102,56 @@ nav a {
 }
 
 footer {
-    background-color: #f4f4f4;
+    background-color: #252525;
     text-align: center;
     padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 25px;
-    padding-right: 25px;
+    font-family: consolas;
+    color: white;
 }
 
+p{
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.footer{
+    font-size: 15px;
+    font-weight: bold;
+}
 
 
 </style>
 
 <body>
     <header>
+        <center>
         <nav>
-               
-              <a href="#" class="cta-button">Home</a>  
               <a href="#about" class="cta-button">About</a> 
               <a href="#fine" class="cta-button">Fine</a> 
               <a href="#contact" class="cta-button">Contact</a>  
-
         </nav>
+        </center>
+        <hr color="#beb1b1">
         <div class="hero">
-            <h1>Welcome to Our Class Website</h1>
-            <a href="captains.html" class="button"><b>View Class Leadership</b></a> 
+            <h2>Welcome to Our Class Website</h2>
+            <a href="captains.html" class="button"><b>View Class Captains</b></a> 
         </div>
     </header>
 
     <section id="about" class="content-section1">
         <div class="container">
-            <h2>About Us</h2>
+            <h3><u>About Us</u></h3>
             <p>This is our class website. Here you can ask any doubt directly to the teachers through Facebook Messenger. Also you can check your language, hygiene and absent fines. </p>
         </div>
     </section>
 
     <section id="fine" class="content-section">
         <div class="container">
-                <h2>Check Fine</h2>
+                <h3><u>Class Fine/Penalties</u></h3>
                 <p>By following the below link you can check your fine that includes language fine, hygiene fine and absent fine. </p>
                 <a href="fine.html" class="cta-button">Check Fine</a><br><br>
                 <hr>
-                <h2>See Fine Collection</h2>
+                <h3><u>See Fine Collection</u></h3>
                 <p> By simply clicking on the below link you can see how much fine is collected and who has paid what amount of fine.</p>
                 <a href="collected.html" class="btn"> Fine Collection</a>
         </div>
@@ -159,14 +159,14 @@ footer {
 
     <section id="contact" class="content-section">
         <div class="container">
-            <h2>Contact</h2>
+            <h3><u>Contact</u></h3>
             <p>Have questions or need assistance? Ask directly to teachers!</p>
             <a href="https://www.messenger.com/t/6338387656274959" class="cta-button" target="_blank">Contact Us</a>
         </div>
     </section>
     <footer>
-        <div class="container">
-            <p>&copy; 2025 SSBS Class 9 </p>
+        <div class="footer">
+          &copy; 2025 <a href="https://www.facebook.com/i.am.bhupesh01" style="text-decoration: none;color: white;">Bhupesh Raj Bhatt</a>
         </div>
     </footer>
 </body>
