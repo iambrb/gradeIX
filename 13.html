@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,33 +8,35 @@
   <link rel="shortcut icon" href="logo.ico" type="image/x-icon">
   <title>Chandani Dhami</title>
 </head>
+
 <body>
-    <div class="container">
-      <h1 class="heading" align="center"><a href="fine.html"><img src="back.png" width="18px"></a>&nbsp;&nbsp;Student Fines Details</h1>
-      <div id="studentInfo" class="info-box">
-        <p><span class="info-label">Student Name:</span> Chandani Dhami</p>
-        <p><span class="info-label">Roll No:</span> 13 </p>
-        <p><span class="info-label">Language Fine:</span> Rs. 9.00</p>
-        <p><span class="info-label">Absent Fine:</span> Rs. 10.00</p>
-        <p><span class="info-label">Hygiene Fine:</span> Rs. 5.00</p>
-      </div>
-  
-      <button class="calculate-btn" onclick="calculateTotalFine()">Calculate Total Fine</button>
-  <br>
-      <div id="totalFine" class="total-fine"></div>
+  <div class="container">
+    <h1 class="heading" align="center"><a href="fine.html"><img src="back.png" width="18px"></a>&nbsp;&nbsp;Student
+      Fines Details</h1>
+    <div id="studentInfo" class="info-box">
+      <p><span class="info-label">Student Name:</span> Chandani Dhami</p>
+      <p><span class="info-label">Roll No:</span> 13 </p>
+      <p><span class="info-label">Language Fine:</span> Rs. 9.00</p>
+      <p><span class="info-label">Absent Fine:</span> Rs. 10.00</p>
+      <p><span class="info-label">Hygiene Fine:</span> Rs. 5.00</p>
     </div>
+
+    <button class="calculate-btn" onclick="calculateTotalFine()">Calculate Total Fine</button>
+    <br>
+    <div id="totalFine" class="total-fine"></div>
+  </div>
   <br>
-    <script>
-      function calculateTotalFine() {
-        const languageFine = 9.00;
-        const absentFine = 10.00;
-        const hygieneFine = 5.00;
-  
-        const totalFine = languageFine + absentFine + hygieneFine;
-        const totalFineDisplay = document.getElementById('totalFine');
-        totalFineDisplay.innerText = `Total Fine: Rs. ${totalFine.toFixed(2)}`;
-      }
-    </script>
-  </body>
-  </html>
-  
+  <script>
+    function calculateTotalFine() {
+      const languageFine = 9.00;
+      const absentFine = 10.00;
+      const hygieneFine = 5.00;
+
+      const totalFine = languageFine + absentFine + hygieneFine;
+      const totalFineDisplay = document.getElementById('totalFine');
+      totalFineDisplay.innerText = `Total Fine: Rs. ${totalFine.toFixed(2)}`;
+    }
+  </script>
+</body>
+
+</html>
