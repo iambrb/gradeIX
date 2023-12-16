@@ -1,93 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Developer</title>
+    <title>About Class 9 App</title>
     <style>
-        /* Add some style to the icons */
-        .icon {
-            width: 35px;
-            height: 35px;
-            margin: 10px;
-            transition: transform 0.3s;
-            border-radius: 8px;
-        }
-
-        /* Add some hover effects to the icons */
-        .icon:hover {
-            transform: scale(1.2);
-        }
-
-        /* Add some style to the header */
-        header {
-            display: flex;
-            align-items: center;
-            padding: 20px;
-        }
-
-        /* Add some style to the section */
-        section {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin: 20px;
-        }
-
-        /* Add some style to the image */
-        img {
-            border: 5px solid white;
-            box-shadow: 0 0 10px black;
-        }
-
-        /* Add some style to the headings */
-        h1, h2, h3 {
+        body {
             font-family: Arial, sans-serif;
-            text-align: center;
-            margin-bottom: 0px;
-            padding-bottom: 0px;
-            font-weight: bold;
+            background-color: #f0f0f0;
         }
-
-        /* Add some style to the paragraphs */
-        p {
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            max-width: 600px;
-            font-weight: bold;
-        }
-
-        /* Add a container for the social media icons */
-        .social-media {
+        .container {
+            width: 80%;
+            margin: auto;
             display: flex;
-            justify-content: center;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .card {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+            margin: 1em;
+            flex-basis: calc(50% - 2em);
+        }
+        .card h3 {
+            color: #4CAF50;
+        }
+        .learn-more {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            margin-top: 10px;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+        .learn-more:hover {
+            background-color: #45a049;
+        }
+        @media (max-width: 600px) {
+            .card {
+                flex-basis: 100%;
+            }
         }
     </style>
 </head>
 <body>
-
-<section id="developer-info">
-    <img src="leader.jpg" style="width: 150px; border-radius: 50%;">
-    
-    <h2>Bhupesh Raj Bhatt</h2>
-    <p>Developer of SSS Class App</p>
-
-    <h3>About Me</h3>
-    <p align="center">I am a grade 9 student at Shree Sanjiwani Shuklaphanta Boarding School Bedkot-6, Sisaiya.</p>
-
-    <h3>Social Media Profiles</h3>
-    <!-- Social media icons can be added here -->
-    <!-- Example: -->
-    <!-- I used the iconfinder website to get the icons for the social media platforms you want -->
-    <!-- 3 -->
-    <div class="social-media">
-        <a href="https://www.facebook.com/i.am.bhupesh01"><img src="facebook.png" alt="Facebook" class="icon"></a>
-        <a href="https://www.instagram.com/i.am.bhupesh01"><img src="instagram.png" alt="Instagram" class="icon"></a>
-        <a href="https://github.com/iambrb"><img src="github.png" alt="GitHub" class="icon"></a>
-        <a href="https://wa.me/+9779848879139"><img src="whatsapp.png" alt="WhatsApp" class="icon"></a>
+    <h1>About Class 9 App</h1>
+    <div class="container">
+        <div class="card">
+            <h3>View Class Captain's Profile</h3>
+            <p>Get to know your class captain better! Access detailed profiles and understand their roles and responsibilities.</p>
+            <a href="captains.html" class="learn-more">Learn More</a>
+        </div>
+        <div class="card">
+            <h3>Direct In-App Queries</h3>
+            <p>Have a question? Ask away! Our in-app query feature allows you to get answers quickly and efficiently.</p>
+            <a href="contact.html" class="learn-more">Learn More</a>
+        </div>
+        <div class="card">
+            <h3>Monitor Your Fines and Penalties</h3>
+            <p>Stay informed about your disciplinary status. Check your fines and penalties anytime, anywhere.</p>
+            <a href="fine.html" class="learn-more">Learn More</a>
+        </div>
+        <div class="card">
+            <h3>Access Class 9 Fine Accounts</h3>
+            <p>Transparency is our priority. View the fine accounts for Class 9 and stay updated on all transactions.</p>
+            <a href="collected.html" class="learn-more">Learn More</a>
+        </div>
     </div>
-    
-</section>
-
 </body>
 </html>
