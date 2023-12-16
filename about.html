@@ -1,130 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=10">
-    <title>About Us</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Developer</title>
     <style>
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            font-family: Arial, sans-serif;
-        }
-
-        .header {
-            background-color: #0BCEAF;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-
-        .header h1 {
-            font-size: 36px;
-        }
-
-
-        .main {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            padding: 20px;
-        }
-
-        .main .card {
-            width: 45%;
+        /* Add some style to the icons */
+        .icon {
+            width: 35px;
+            height: 35px;
             margin: 10px;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-            border-radius: 10px;
+            transition: transform 0.3s;
+            border-radius: 8px;
         }
 
-
-        .main .card .content {
-            padding-bottom: 20px;
-            padding-left: 10px;
-            padding-right: 10px;
+        /* Add some hover effects to the icons */
+        .icon:hover {
+            transform: scale(1.2);
         }
 
-        .main .card .content h3 {
-            font-size: 24px;
-            color: #02228b;
-        }
-
-        .main .card .content p {
-            font-size: 18px;
-            color: #57595e;
-        }
-
-        .main .card .content a {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #0BCEAF;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-
-        .main .card .content a:hover {
-            background-color: #474e5d;
-        }
-
-        .footer {
-            background-color: #474e5d;
-            color: white;
+        /* Add some style to the header */
+        header {
+            display: flex;
+            align-items: center;
             padding: 20px;
+        }
+
+        /* Add some style to the section */
+        section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
+        }
+
+        /* Add some style to the image */
+        img {
+            border: 5px solid white;
+            box-shadow: 0 0 10px black;
+        }
+
+        /* Add some style to the headings */
+        h1, h2, h3 {
+            font-family: Arial, sans-serif;
             text-align: center;
+            margin-bottom: 0px;
+            padding-bottom: 0px;
+            font-weight: bold;
         }
 
-        .footer p {
-            font-size: 18px;
+        /* Add some style to the paragraphs */
+        p {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            max-width: 600px;
+            font-weight: bold;
         }
 
-        @media screen and (max-width: 768px) {
-            .main .card {
-                width: 90%;
-            }
+        /* Add a container for the social media icons */
+        .social-media {
+            display: flex;
+            justify-content: center;
         }
     </style>
 </head>
-
 <body>
-    <div class="container">
 
-        <div class="main">
-            <div class="card">
-                <div class="content">
-                    <h3>Hygiene and Language Fines</h3>
-                    <p>Monitor and manage your hygiene and language fines with an easy-to-use interface. You can check
-                        your current fines online, and view your history.</p>
-                    <a href="fine.html">Learn More</a>
-                </div>
-            </div>
-            <div class="card">
+<section id="developer-info">
+    <img src="leader.jpg" style="width: 150px; border-radius: 50%;">
+    
+    <h2>Bhupesh Raj Bhatt</h2>
+    <p>Developer of SSS Class App</p>
 
-                <div class="content">
-                    <h3>Class Captains</h3>
-                    <p>View the class captains' profiles.</p>
-                    <a href="captains.html">Learn More</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="content">
-                    <h3>Queries and Feedback</h3>
-                    <p>Submit your queries and feedback through the app and get instant responses.</p>
-                    <a href="contact.html">Learn More</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="content">
-                    <h3>Class 9 Accounts</h3>
-                    <p>Access the class 9 fine collection details and accounts. You can also view
-                        the reports of the class 9 fines' account.</p>
-                    <a href="collected.html">Learn More</a>
-                </div>
-            </div>
-        </div>
+    <h3>About Me</h3>
+    <p align="center">I am a grade 9 student at Shree Sanjiwani Shuklaphanta Boarding School Bedkot-6, Sisaiya.</p>
 
+    <h3>Social Media Profiles</h3>
+    <!-- Social media icons can be added here -->
+    <!-- Example: -->
+    <!-- I used the iconfinder website to get the icons for the social media platforms you want -->
+    <!-- 3 -->
+    <div class="social-media">
+        <a href="https://www.facebook.com/i.am.bhupesh01"><img src="facebook.png" alt="Facebook" class="icon"></a>
+        <a href="https://www.instagram.com/i.am.bhupesh01"><img src="instagram.png" alt="Instagram" class="icon"></a>
+        <a href="https://github.com/iambrb"><img src="github.png" alt="GitHub" class="icon"></a>
+        <a href="https://wa.me/+9779848879139"><img src="whatsapp.png" alt="WhatsApp" class="icon"></a>
     </div>
-</body>
+    
+</section>
 
+</body>
 </html>
