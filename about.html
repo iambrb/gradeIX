@@ -1,1 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=10">
+    <title>About Us</title>
+    <style>
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            background-color: #0BCEAF;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 36px;
+        }
+
+
+        .main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .main .card {
+            width: 45%;
+            margin: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+
+
+        .main .card .content {
+            padding-bottom: 20px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .main .card .content h3 {
+            font-size: 24px;
+            color: #02228b;
+        }
+
+        .main .card .content p {
+            font-size: 18px;
+            color: #57595e;
+        }
+
+        .main .card .content a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #0BCEAF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .main .card .content a:hover {
+            background-color: #474e5d;
+        }
+
+        .footer {
+            background-color: #474e5d;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer p {
+            font-size: 18px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .main .card {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="main">
+            <div class="card">
+                <div class="content">
+                    <h3>Hygiene and Language Fines</h3>
+                    <p>Monitor and manage your hygiene and language fines with an easy-to-use interface. You can check
+                        your current fines online, and view your history.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+            <div class="card">
+
+                <div class="content">
+                    <h3>Class Captains</h3>
+                    <p>View the class captains' profiles.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <h3>Queries and Feedback</h3>
+                    <p>Submit your queries and feedback through the app and get instant responses.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <h3>Class 9 Accounts</h3>
+                    <p>Access the class 9 fine collection details and accounts. You can also view
+                        the reports of the class 9 fines' account.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
