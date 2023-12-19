@@ -114,7 +114,7 @@
         <form>
             <label for="rollNumber">Enter Roll Number (1-23):</label>
             <input type="number" id="rollNumber" min="1" max="23">
-            <button onclick="checkFine()">Check Fine</button>
+            <button onclick="checkFine()" target="_blank">Check Fine</button>
         </form>
 
         <div id="result"></div>
@@ -142,7 +142,8 @@
 
             // Redirect to the respective HTML page based on the roll number
             if (rollNumber >= 1 && rollNumber <= 23) {
-                const pageName = `${rollNumber}.html`
+                const pageName = `${rollNumber}.html`;
+                window.open(pageName, '_blank');
             }
         }
     </script>
